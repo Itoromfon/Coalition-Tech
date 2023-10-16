@@ -1,0 +1,775 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background: #fff;
+}
+
+.my-header {
+    background: #ff6100;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15%;
+}
+
+.my-header h1 {
+    font-size: 15px;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1px;
+}
+
+.signup {
+    display: flex;
+}
+
+
+.call-span {
+    color: #fff;
+}
+
+.logging {
+    cursor: pointer;
+}
+
+.signlog {
+    margin-left: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+
+header {
+    position: relative;
+    left: 0;
+    right: 0;
+    background: #c3c3c3;
+    padding: 25px 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+header .logo {
+    font-weight: bolder;
+    font-size: 41px;
+    color: #000;    
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.span-logo {
+    color: #ff6100;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+header .navbar ul {
+    list-style: none;
+}
+
+header .navbar ul li {
+    position: relative;
+    float: left ;
+}
+
+header .navbar ul li a {
+    font-size: 13px;
+    font-family: 'Myriad-Pro-Semibold-Condensed', sans-serif;
+    padding: 12px 20px;
+    color: #575454;
+    display: block;
+    transition: 09.6s ease;
+}
+
+header .navbar ul li a:hover,
+header .navbar ul li a.active {
+    color: #ff6100;
+}
+
+header .navbar ul li a:hover::after,
+header .navbar ul li a.active::after {
+    content: "";
+    width: 30%;
+    height: 3px;
+    background: #ff6100;
+    position: absolute;
+    bottom: 0px;
+    left: 20px;
+    transition: 0.5s ease-in;
+}
+
+header .navbar ul li ul{
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background: #fff;
+    border: 1px solid #575454;
+    border-radius: 5px;
+    display: none;
+}
+
+header .navbar ul li ul li {
+    width: 100%;
+    border-top: 1px solid #f5f3f3;
+}
+
+header .navbar ul li ul li ul {
+    left: 200px;
+    top: 0;
+}
+
+header .navbar ul li:focus-within >ul,
+header .navbar ul li:hover > ul {
+    display: initial;
+}
+
+#menu-bar {
+    display: none;
+}
+
+header label {
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+    display: none;
+}
+
+.home-div {
+    margin-top: 47px;
+    padding: 0px 15%;
+}
+
+.home-paragraph {
+    color: #a2a0a0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.home-contact {
+    color: #000;
+    font-weight: bold;
+}
+
+.contact-div {
+    padding: 0 15%;
+    margin-top: 43px;
+}
+
+.contact-head {
+    color: #ff6100;
+    font-size: 27px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contact-paragraph {
+    font-size: 14px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #a2a0a0;
+    margin-top: 8px;
+}
+
+.contactform-div {
+    padding: 0 15%;
+    margin-top: 40px;
+    margin-bottom: 45px;
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.phone-email {
+    display: flex;
+    flex-direction: row;
+    width: 420px;
+}
+
+
+.email-input {
+    margin-left: 10px;
+}
+
+.contact-us input {
+    margin-top: 10px;
+    background: #c3c3c3;
+    padding: 13px 10px; 
+    border: 1px solid #a2a0a0;
+    width: 420px;
+}
+
+.contact-us textarea {
+    margin-top: 10px;
+    background: #c3c3c3;
+    width: 420px;
+    height: 120px;
+}
+
+.contact-us .input-name {
+    margin-top: 15px;
+}
+
+.contact-rule {
+    width: 420px;
+    font-weight: bolder;
+    margin-top: 10px;
+}
+
+.contactform-head {
+    font-size: 23px;
+    font-family: 'Open Sans', sans-serif;
+    color: #ff6100;
+}
+
+.button {
+    margin-top: 15px;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    background: #ff6100;
+    color: #fff;
+    border: none;
+    padding: 10px 24px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #ce5103;
+}
+
+.contact-reach {
+    margin-left: 60px;
+}
+
+.phone-street {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.phone-reach {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.contact-icons {
+    margin-top: 80px;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 480px) {
+    .my-header {
+        padding: 20px;
+    }
+
+    header {
+        padding: 20px;
+    }
+    
+        header label {
+            display: initial;
+        }
+    
+        header .navbar {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: #c3c3c3;
+            border-top: 1px solid rgba(0, 0, 0, .1);
+            display: none;
+        }
+    
+        header .navbar ul li {
+            width: 100%;
+        }
+    
+        header .navbar ul li a:hover::after,
+        header .navbar ul li a.active::after {
+            content: "";
+            width: 8%;
+            height: 3px;
+            background: #ff6100;
+            position: absolute;
+            bottom: 0px;
+            left: 20px;
+            transition: 0.5s ease-in;
+        }
+    
+        header .navbar ul li ul {
+            position: relative;
+            width: 100%;
+        }
+    
+        header .navbar ul li ul li {
+            background: #eee;
+        }
+    
+        header .navbar ul li ul li ul {
+            width: 100%;
+            left: 0;
+        }
+    
+        #menu-bar:checked~.navbar {
+            display: initial;
+        }
+
+        .home-div {
+            margin-top: 40px;
+            padding: 20px;
+        }
+
+        .contact-div {
+            margin-top: 0;
+            padding: 20px;
+            width: 100%;
+        }
+
+        .contactform-div {
+            margin-top: 0;
+            padding: 20px;
+            flex-direction: column;
+        }
+        
+        .contact-us input {
+            width: 100%;
+        }
+
+        .contact-us textarea {
+            width: 100%;
+        }
+
+        .phone-email {
+            width: 100%;
+            flex-direction: column;
+        }
+
+        .email-input {
+            margin-left: 0;
+        }
+        
+        .contact-rule {
+            width: 100%;
+        }
+
+        .contact-reach {
+            padding: 20px;
+            margin-left: 0;
+        }
+}
+
+@media screen and (max-width: 600px) and (min-width: 481px) { 
+    .my-header {
+        padding: 20px;
+    }
+    
+    header {
+            padding: 20px;
+        }
+    
+        header label {
+            display: initial;
+        }
+    
+        header .navbar {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: #c3c3c3;
+            border-top: 1px solid rgba(0, 0, 0, .1);
+            display: none;
+        }
+    
+        header .navbar ul li {
+            width: 100%;
+        }
+    
+        header .navbar ul li a:hover::after,
+        header .navbar ul li a.active::after {
+            content: "";
+            width: 8%;
+            height: 3px;
+            background: #ff6100;
+            position: absolute;
+            bottom: 0px;
+            left: 20px;
+            transition: 0.5s ease-in;
+        }
+    
+        header .navbar ul li ul {
+            position: relative;
+            width: 100%;
+        }
+    
+        header .navbar ul li ul li {
+            background: #eee;
+        }
+    
+        header .navbar ul li ul li ul {
+            width: 100%;
+            left: 0;
+        }
+    
+        #menu-bar:checked~.navbar {
+            display: initial;
+        }
+
+        .home-div {
+            margin-top: 40px;
+            padding: 20px;
+        }
+
+        .contact-div {
+            margin-top: 0;
+            padding: 20px;
+            width: 100%;
+        }
+
+        .contactform-div {
+            margin-top: 0;
+            padding: 20px;
+            flex-direction: column;
+        }
+
+        .contact-us input {
+            width: 100%;
+        }
+
+        .contact-us textarea {
+            width: 100%;
+        }
+
+        .phone-email {
+            width: 100%;
+            flex-direction: column;
+        }
+
+        .email-input {
+            margin-left: 0;
+        }
+
+        .contact-rule {
+            width: 100%;
+        }
+
+        .contact-reach {
+            padding: 20px;
+            margin-left: 0;
+        }
+}
+
+@media screen and (max-width: 768px) and (min-width: 601px) { 
+    .my-header {
+        padding: 20px;
+    }
+    
+    header {
+            padding: 20px;
+        }
+    
+        header label {
+            display: initial;
+        }
+    
+        header .navbar {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: #c3c3c3;
+            border-top: 1px solid rgba(0, 0, 0, .1);
+            display: none;
+        }
+    
+        header .navbar ul li {
+            width: 100%;
+        }
+    
+        header .navbar ul li a:hover::after,
+        header .navbar ul li a.active::after {
+            content: "";
+            width: 8%;
+            height: 3px;
+            background: #ff6100;
+            position: absolute;
+            bottom: 0px;
+            left: 20px;
+            transition: 0.5s ease-in;
+        }
+    
+        header .navbar ul li ul {
+            position: relative;
+            width: 100%;
+        }
+    
+        header .navbar ul li ul li {
+            background: #eee;
+        }
+    
+        header .navbar ul li ul li ul {
+            width: 100%;
+            left: 0;
+        }
+    
+        #menu-bar:checked~.navbar {
+            display: initial;
+        }
+
+        .home-div {
+            margin-top: 40px;
+            padding: 20px;
+        }
+
+        .contact-div {
+            margin-top: 0;
+            padding: 20px;
+            width: 100%;
+        }
+
+        .contactform-div {
+            margin-top: 0;
+            padding: 20px;
+            flex-direction: column;
+        }
+
+        .contact-us input {
+            width: 100%;
+        }
+
+        .contact-us textarea {
+            width: 100%;
+        }
+
+        .phone-email {
+            width: 100%;
+            flex-direction: column;
+        }
+
+        .email-input {
+            margin-left: 0;
+        }
+
+        .contact-rule {
+            width: 100%;
+        }
+
+        .contact-reach {
+            padding: 20px;
+            margin-left: 60px/;
+        }
+}
+
+@media screen and (max-width: 900px) and (min-width: 769px) { 
+    .my-header {
+        padding: 20px;
+    }
+    
+    header {
+            padding: 20px;
+        }
+    
+        header label {
+            display: initial;
+        }
+    
+        header .navbar {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: #c3c3c3;
+            border-top: 1px solid rgba(0, 0, 0, .1);
+            display: none;
+        }
+    
+        header .navbar ul li {
+            width: 100%;
+        }
+    
+        header .navbar ul li a:hover::after,
+        header .navbar ul li a.active::after {
+            content: "";
+            width: 8%;
+            height: 3px;
+            background: #ff6100;
+            position: absolute;
+            bottom: 0px;
+            left: 20px;
+            transition: 0.5s ease-in;
+        }
+    
+        header .navbar ul li ul {
+            position: relative;
+            width: 100%;
+        }
+    
+        header .navbar ul li ul li {
+            background: #eee;
+        }
+    
+        header .navbar ul li ul li ul {
+            width: 100%;
+            left: 0;
+        }
+    
+        #menu-bar:checked~.navbar {
+            display: initial;
+        }
+
+        .home-div {
+            margin-top: 40px;
+            padding: 20px;
+        }
+
+        .contact-div {
+            margin-top: 0;
+            padding: 20px;
+            width: 100%;
+        }
+
+        .contactform-div {
+            margin-top: 0;
+            padding: 20px;
+        }
+
+        .contact-us input {
+            width: 100%;
+        }
+
+        .contact-us textarea {
+            width: 100%;
+        }
+
+        .phone-email {
+            width: 100%;
+        }
+
+        .contact-rule {
+            width: 100%;
+        }
+
+        .contact-reach {
+            padding: 20px;
+            margin-left: 0;
+        }
+}
+
+
+@media (max-width: 991px) {
+    .my-header {
+        padding: 20px;
+    }
+
+    header {
+        padding: 20px;
+    }
+    
+    header label {
+        display: initial;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #c3c3c3;
+        border-top: 1px solid rgba(0,0,0,.1);
+        display: none;
+    }
+
+    header .navbar ul li {
+        width: 100%;
+    }
+
+        header .navbar ul li a:hover::after,
+        header .navbar ul li a.active::after {
+            content: "";
+            width: 8%;
+            height: 3px;
+            background: #ff6100;
+            position: absolute;
+            bottom: 0px;
+            left: 20px;
+            transition: 0.5s ease-in;
+        }
+
+    header .navbar ul li ul {
+        position: relative;
+        width: 100%;
+    }
+
+    header .navbar ul li ul li {
+        background: #eee;
+    } 
+
+    header .navbar ul li ul li ul {
+        width: 100%;
+        left: 0;
+    }
+
+    #menu-bar:checked ~ .navbar{
+        display: initial;
+    }
+
+    .home-div {
+        margin-top: 40px;
+        padding: 20px;
+    }
+
+    .contact-div {
+        margin-top: 0;
+        padding: 20px;
+        width: 100%;
+    }
+
+    .contactform-div {
+        margin-top: 0;
+        padding: 20px;
+    }
+
+    .contact-us input {
+        width: 100%;
+    }
+
+    .contact-us textarea {
+        width: 100%;
+    }
+
+    .phone-email {
+        width: 100%;
+    }
+
+    .contact-rule {
+        width: 100%;
+    }
+
+    .contact-reach {
+        padding: 20px;
+        margin-left: 0;
+    }
+}
